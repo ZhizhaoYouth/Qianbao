@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID" />
+
+    <TextView
+        android:id="@+id/textuserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User ID" />
+
+    <TextView
+        android:id="@+id/textloginTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Time" />
+
+    <TextView
+        android:id="@+id/textdeviceType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Type" />
+
+    <TextView
+        android:id="@+id/textipAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IP Address" />
+
+    <TextView
+        android:id="@+id/textlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location" />
+
+    <TextView
+        android:id="@+id/textbrowserInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Browser Info" />
+
+    <TextView
+        android:id="@+id/textoperatingSystem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operating System" />
+
+    <TextView
+        android:id="@+id/textcreateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Time" />
+
+    <TextView
+        android:id="@+id/textupdateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Time" />
+</LinearLayout>
