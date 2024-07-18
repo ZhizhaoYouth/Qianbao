@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.finplat.financialmanage.mapper.AccountMapper">
+
+    <resultMap id="BaseResultMap" type="com.finplat.financialmanage.model.entity.Account">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="accountName" column="accountName" jdbcType="VARCHAR"/>
+            <result property="accountNumber" column="accountNumber" jdbcType="VARCHAR"/>
+            <result property="accountType" column="accountType" jdbcType="TINYINT"/>
+            <result property="balance" column="balance" jdbcType="DECIMAL"/>
+            <result property="reviewStatus" column="reviewStatus" jdbcType="INTEGER"/>
+            <result property="reviewMessage" column="reviewMessage" jdbcType="VARCHAR"/>
+            <result property="reviewerId" column="reviewerId" jdbcType="BIGINT"/>
+            <result property="reviewTime" column="reviewTime" jdbcType="TIMESTAMP"/>
+            <result property="userId" column="userId" jdbcType="BIGINT"/>
+            <result property="createTime" column="createTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,accountName,accountNumber,
+        accountType,balance,reviewStatus,
+        reviewMessage,reviewerId,reviewTime,
+        userId,createTime,updateTime,
+        isDelete
+    </sql>
+</mapper>

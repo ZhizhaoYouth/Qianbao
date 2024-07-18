@@ -1,0 +1,10 @@
+# 测试配置文件
+server:
+  port: 8102
+spring:
+  # 数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/finplat
+    username: root
+    password: root
