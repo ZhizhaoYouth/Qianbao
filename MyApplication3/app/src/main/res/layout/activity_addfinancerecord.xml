@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Account Number Input -->
+    <EditText
+        android:id="@+id/et_account_IDfrd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:hint="账户ID"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_account_frd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="交易金额"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_account_IDfrd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Budget Category Spinner -->
+    <Spinner
+        android:id="@+id/spinner_frd_category"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintTop_toBottomOf="@id/et_account_frd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_account_frdtype"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="收入/支出"
+        app:layout_constraintTop_toBottomOf="@id/spinner_frd_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_account_frd_date"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="交易时间(yyyy-mm-dd)"
+        app:layout_constraintTop_toBottomOf="@id/et_account_frdtype"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_account_frddes"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="备注"
+        app:layout_constraintTop_toBottomOf="@id/et_account_frd_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Add Button -->
+    <Button
+        android:id="@+id/btn_add_addfrd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="添加"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_account_frddes" />
+
+    <!-- Back Button -->
+<!--    <Button-->
+<!--        android:id="@+id/btn_back_addfrd"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:text="返回"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btn_add_addfrd" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

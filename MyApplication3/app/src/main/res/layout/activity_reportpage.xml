@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReportPage">
+
+<!--    <Button-->
+<!--        android:id="@+id/btnBack"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="返回" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/app_name">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/incomePieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/expensePieChart"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

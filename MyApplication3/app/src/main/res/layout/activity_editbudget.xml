@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_edit_IDbgt"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:hint="预算ID"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_IDaccount"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:hint="账户ID"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_IDbgt" />
+
+    <EditText
+        android:id="@+id/et_edit_budget"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="预算"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_IDaccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Budget Category Spinner -->
+    <Spinner
+        android:id="@+id/spinner_editbudget_category"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_budget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_bgt_startdate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="开始时间(yyyy-mm-dd)"
+        app:layout_constraintTop_toBottomOf="@id/spinner_editbudget_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_bgt_enddate"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="结束时间(yyyy-mm-dd)"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_bgt_startdate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/et_edit_bgtdes"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="备注"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_bgt_enddate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_edit_editbudget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="更改预算"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_edit_bgtdes" />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_back_editbudget"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:text="返回"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btn_edit_editbudget"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

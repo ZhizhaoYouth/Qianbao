@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Account Name Input -->
+
+    <!-- Account Number Input -->
+    <EditText
+        android:id="@+id/et_editaccount_id"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="80dp"
+        android:hint="账户ID"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/et_editaccount_number"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="账户号码"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/et_editaccount_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/et_editaccount_name"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="更改的账户名称"
+        app:layout_constraintTop_toBottomOf="@id/et_editaccount_number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+    <!-- Add Button -->
+
+    <!-- Back Button -->
+
+    <Button
+        android:id="@+id/btn_edit_editaccount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="更改账户名称"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_editaccount_name"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_back_editaccount"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:text="返回"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/btn_edit_editaccount"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

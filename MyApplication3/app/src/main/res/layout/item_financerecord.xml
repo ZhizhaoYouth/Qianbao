@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvFinanceRecordId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Finance Record ID" />
+
+    <TextView
+        android:id="@+id/tvTransactionDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Description" />
+
+    <TextView
+        android:id="@+id/tvAccountId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account ID" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount" />
+
+    <TextView
+        android:id="@+id/tvTransactionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Type" />
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category" />
+
+    <TextView
+        android:id="@+id/tvTransactionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction Time" />
+
+</LinearLayout>
